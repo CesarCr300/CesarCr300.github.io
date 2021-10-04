@@ -10,7 +10,7 @@
 }
 
 body {
-    color: var(--color);
+    color: var(--text-color);
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -68,7 +68,6 @@ body {
 }
 
 .inicio {
-    /* position: absolute; */
     top: 0;
     margin-top: 0;
     height: 100vh;
@@ -84,8 +83,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 172px;
-    width: 600px;
     text-align: center;
 }
 
@@ -94,7 +91,7 @@ body {
     position: relative;
     display: inline-block;
     margin: 0;
-    padding: 20px;
+    padding: 1.25em;
     font-size: 2rem;
     font-weight: bold;
     color: var(--text-color);
@@ -102,7 +99,7 @@ body {
 
 .presentation-text p {
     margin: 0;
-    animation: display-index 3s;
+    animation: display-index 2s;
 }
 
 .habilidades {
@@ -116,5 +113,14 @@ body {
     }
     100% {
         opacity: 100%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .presentation {
+        top: 290px
+    }
+    .presentation-text {
+        font-size: 1rem;
     }
 }
