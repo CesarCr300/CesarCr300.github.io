@@ -27,6 +27,8 @@ body {
 }
 
 .navbar {
+    display: flex;
+    align-items: center;
     margin: 0;
     height: 3em;
     padding: 0 0 0 0;
@@ -34,21 +36,18 @@ body {
 }
 
 .navbar-left {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    height: 100%;
+    display: flex;
 }
 
 .navbar-right {
-    display: inline-block;
+    display: flex;
     position: absolute;
     right: 0;
-    height: 100%;
 }
 
 .navbar-elements {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 6em;
     text-align: center;
 }
@@ -57,14 +56,13 @@ body {
     color: var(--text-color);
     text-decoration: none;
     position: relative;
-    top: 0.8em;
 }
 
 .navbar-elements:hover {
     background-color: var(--navbar-color-hover);
     font-weight: bold;
-    top: 0em;
-    text-shadow: 0.5em 0.5em rgba(255 255 255 /0.05);
+    transform: scale(1.1);
+    /* text-shadow: 0.5em 0.5em rgba(255 255 255 /0.05); */
 }
 
 .inicio {
