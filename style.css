@@ -3,7 +3,7 @@
 }
 
 :root {
-    --navbar-color: #212121;
+    --navbar-color: rgba(33, 33, 33, 1);
     --navbar-color-hover: #212121;
     --presentation-color: #212121;
     --text-color: #333333;
@@ -63,6 +63,7 @@ body {
     color: var(--text-color-navbar);
     text-decoration: none;
     position: relative;
+    font-weight: bold;
 }
 
 .navbar-icon {
@@ -78,7 +79,7 @@ body {
 
 .btn-menu {
     display: none;
-    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .inicio {
@@ -152,12 +153,14 @@ footer {
         flex-direction: column;
         position: fixed;
         align-items: center;
-        justify-content: space-around;
         top: -100vh;
         height: calc(100vh - 3em);
-        width: 100%;
+        width: 50%;
         margin-top: 0;
         background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar-left li {
+        margin: 1em 0;
     }
     .navbar-elements {
         font-size: 1.1rem;
