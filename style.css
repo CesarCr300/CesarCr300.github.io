@@ -300,6 +300,7 @@ footer {
     }
     .descripcion-proyecto {
         width: 90%;
+        min-height: 60vh;
     }
     .descripcion-proyecto--descripcion {
         width: 90%;
