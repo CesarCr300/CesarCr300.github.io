@@ -4,11 +4,13 @@
 
 :root {
     --navbar-color: rgba(33, 33, 33, 1);
-    --navbar-color-hover: #212121;
-    --presentation-color: #212121;
+    --navbar-color-hover: var(--navbar-color);
+    --presentation-color: var(--navbar-color);
+    --proyecto-color: var(--navbar-color);
     --text-color: #333333;
     --text-color-navbar: #f7f8f3;
     --text-color-inicio: #f7f8f3;
+    --text-color-proyectos: var(--text-color);
     --text-color-footer: #f7f8f3;
 }
 
@@ -18,8 +20,11 @@ body {
     color: var(--text-color);
     margin: 0;
     font-family: 'Noto Sans Display', sans-serif;
-    min-height: 300vh;
+    height: 100vh;
 }
+
+
+/*navbar*/
 
 .header {
     margin: 0 0 0 0;
@@ -81,18 +86,28 @@ body {
     margin-left: 1em;
 }
 
-.seccion-inicio {
+
+/* seccion */
+
+.seccion {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 3em);
+    width: 100%;
+}
+
+.seccion-inicio {
     top: 0;
     margin-top: 0;
-    height: 100vh;
-    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/inicio.jpg");
     background-size: cover;
     background-position: center;
 }
+
+
+/* inicio */
 
 .presentation {
     text-align: center;
@@ -114,14 +129,8 @@ body {
     animation: display-index 5s;
 }
 
-.seccion-habilidades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-}
+
+/* habilidades */
 
 .habilidades {
     display: flex;
@@ -143,10 +152,77 @@ body {
 
 .seccion-proyectos {
     height: calc(100vh - 67px);
+    /* position: relative; */
+}
+
+
+/*PROYECTOS*/
+
+.proyectos {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 80%;
+    height: 80%;
+}
+
+.proyecto {
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--proyecto-color);
+    color: var(--text-color-navbar);
+}
+
+.fondo-borroso {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255 255 255 / 0.9)
+}
+
+.descripcion-proyecto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 40vh;
+    border: 0.2em solid var(--proyecto-color);
+    background-color: rgba(255 255 255 / 1);
+    color: var(--text-color);
+}
+
+.descripcion-proyecto--cerrar {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.descripcion-proyecto--cerrar i {
+    height: 100%;
+    width: 100%;
+}
+
+.descripcion-proyecto--descripcion {
+    width: 80%;
+}
+
+.mostrar {
+    display: none;
 }
 
 footer {
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     padding: 1em;
     text-align: center;
@@ -164,8 +240,11 @@ footer {
 }
 
 @media only screen and (min-width:320px) and (max-width:800px) {
-    .presentation-text {
+    html {
         font-size: 0.9rem;
+    }
+    .presentation-text {
+        font-size: 1rem;
     }
     .btn-menu {
         display: inline-flex
@@ -175,7 +254,7 @@ footer {
         position: fixed;
         align-items: center;
         top: -100vh;
-        height: calc(300vh - 3em);
+        height: calc(100vh - 3em);
         width: 50%;
         margin-top: 0;
         background-color: rgba(0, 0, 0, 0.8);
