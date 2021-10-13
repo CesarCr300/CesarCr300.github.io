@@ -1,4 +1,5 @@
 addEventListener("DOMContentLoaded", () => {
+    console.log("cambio realizado")
     const proyectos = document.querySelectorAll(".proyecto")
     const ventana = document.querySelector(".fondo-borroso")
     const cerrarVentana = document.querySelector(".descripcion-proyecto--cerrar")
