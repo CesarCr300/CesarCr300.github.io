@@ -1,37 +1,36 @@
 addEventListener("DOMContentLoaded", () => {
     const proyectos = document.querySelectorAll(".proyecto")
     const ventana = document.querySelector(".fondo-borroso")
-    const ventanaDescripcion = document.querySelector(".descripcion-proyecto")
+    const cerrarVentana = document.querySelector(".descripcion-proyecto--cerrar")
+    cerrarVentana.addEventListener("click", () => {
+        ventana.classList.toggle("mostrar")
+    })
     const informacion = {
         controlDePrecios: {
             titulo: "CONTROL DE PRECIOS",
             cliente: "Carnicería Multicarnes Santa Lucía",
-            descripcion: "Esta es una página web en la cual se pueden mostrar diversos productos para el público en la página principal. A su vez, existe la opción de que se inicie sesión."
+            descripcion: "Esta es una página web en la cual se pueden mostrar diversos productos para el público en la página principal. A su vez, existe la opción de que se inicie sesión.",
+            enlace: "https://carniceria-sl-final.herokuapp.com/",
+            enlaceGit: "https://github.com/CesarCr300/Carniceria-SL"
         },
         apirestNotas: {
             titulo: "APIREST DE NOTAS",
             cliente: "Personal",
-            descripcion: ""
+            descripcion: "",
+            enlace: "https://notes-apirest.herokuapp.com/",
+            enlaceGit: "https://github.com/CesarCr300/APIREST-NOTES"
         }
     }
-
-
     for (let proyecto of proyectos) {
         proyecto.addEventListener("click", () => {
-            console.log(proyecto.id)
-            const descripcionProyecto = document.querySelector(".descripcion-proyecto")
+            const descripcionProyecto = document.querySelector(".descripcion-proyecto--contenido")
             descripcionProyecto.innerHTML = `
-           <div class="descripcion-proyecto--cerrar">
-                            <i class="fas fa-times"></i>
-                        </div>
-            <h3>${informacion[proyecto.id].titulo}</h3>
-                        <p class="descripcion-proyecto--cliente">Cliente: ${informacion[proyecto.id].cliente}</p>
-                        <p class="descripcion-proyecto--descripcion">Descripción: ${informacion[proyecto.id].descripcion} </p>
+            <h2>${informacion[proyecto.id].titulo}</h2>
+                <p class="descripcion-proyecto--descripcion">Cliente: ${informacion[proyecto.id].cliente}</p>
+                <p class="descripcion-proyecto--descripcion">${informacion[proyecto.id].descripcion} </p>
+                <a href="informacion[proyecto.id].enlaceGit">Código</a>
+                <a href="${informacion[proyecto.id].enlace}">Producto Final</a>
             `
-            const cerrarVentana = document.querySelector(".descripcion-proyecto--cerrar")
-            cerrarVentana.addEventListener("click", () => {
-                ventana.classList.toggle("mostrar")
-            })
             ventana.classList.toggle("mostrar")
         })
     }
