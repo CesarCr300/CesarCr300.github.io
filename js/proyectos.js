@@ -28,7 +28,7 @@ addEventListener("DOMContentLoaded", () => {
             <h2>${informacion[proyecto.id].titulo}</h2>
                 <p class="descripcion-proyecto--descripcion">Cliente: ${informacion[proyecto.id].cliente}</p>
                 <p class="descripcion-proyecto--descripcion">${informacion[proyecto.id].descripcion} </p>
-                <a href="${informacion[proyecto.id].enlaceGit}" target="_blank">Código</a>
+                <a href="${informacion[proyecto.id].enlaceGit}" target="_blank">Códigoaaa</a>
                 <a href="${informacion[proyecto.id].enlace}" target="_blank">Producto Final</a>
             `
             ventana.classList.toggle("mostrar")
