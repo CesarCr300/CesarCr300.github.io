@@ -74,7 +74,6 @@ body {
     background-color: var(--navbar-color-hover);
     font-weight: bold;
     transform: scale(1.1);
-    /* text-shadow: 0.5em 0.5em rgba(255 255 255 /0.05); */
 }
 
 .btn-menu {
@@ -82,7 +81,7 @@ body {
     margin-left: 1em;
 }
 
-.inicio {
+.seccion-inicio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,12 +114,34 @@ body {
     animation: display-index 5s;
 }
 
-.habilidades {
+.seccion-habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
 }
 
-.proyectos {
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+    border: 1px solid red;
+    flex-wrap: wrap;
+}
+
+.habilidad {
+    width: 30%;
+    height: 33%;
+}
+
+.fondo-habilidad {
+    width: 80%;
+}
+
+.seccion-proyectos {
     height: calc(100vh - 67px);
 }
 
@@ -154,7 +175,7 @@ footer {
         position: fixed;
         align-items: center;
         top: -100vh;
-        height: calc(100vh - 3em);
+        height: calc(300vh - 3em);
         width: 50%;
         margin-top: 0;
         background-color: rgba(0, 0, 0, 0.8);
