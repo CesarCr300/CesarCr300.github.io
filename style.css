@@ -4,6 +4,7 @@
 
 :root {
     --navbar-color: rgba(33, 33, 33, 1);
+    --navbar-color--trasparente: rgba(33, 33, 33, 0.8);
     --navbar-color-hover: var(--navbar-color);
     --presentation-color: var(--navbar-color);
     --proyecto-color: var(--navbar-color);
@@ -46,7 +47,10 @@ body {
     margin: 0;
     height: 3em;
     padding: 0 0 0 0;
-    background-color: var(--navbar-color);
+    background-color: var(--navbar-color--trasparente);
+    font-family: 'GlacialIndifferenceRegular', sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .navbar-left {
@@ -79,8 +83,8 @@ body {
 }
 
 .navbar-elements:hover {
-    background-color: var(--navbar-color-hover);
-    font-weight: bold;
+    /* background-color: var(--navbar-color-hover); */
+    /* font-weight: bold; */
     transform: scale(1.1);
 }
 
@@ -136,25 +140,41 @@ body {
 /* habilidades */
 
 .habilidades {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
     height: 80%;
-    border: 1px solid red;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .habilidad {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    height: 25%;
+    border: 0.2em solid #333;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.seccion-habilidades h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.habilidad h2 {
+    color: black;
+    font-weight: normal;
 }
 
 .fondo-habilidad {
     width: 60%;
+    max-width: 150px;
     min-width: 80px;
+}
+
+.ultima-habilidad {
+    grid-column-start: 2;
 }
 
 
@@ -163,6 +183,11 @@ body {
 .seccion-proyectos {
     height: calc(100vh - 67px);
     /* position: relative; */
+}
+
+.seccion-proyectos h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
 }
 
 .proyectos {
@@ -180,6 +205,12 @@ body {
     text-align: center;
     background-color: var(--proyecto-color);
     color: var(--text-color-navbar);
+}
+
+.proyecto p {
+    font-family: 'GlacialIndifferenceRegular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .fondo-borroso {
@@ -328,4 +359,8 @@ footer {
     .descripcion-proyecto--descripcion {
         width: 90%;
     }
+    .habilidades {
+        width: 90%;
+    }
+    .habilidad {}
 }
