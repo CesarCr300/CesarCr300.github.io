@@ -32,12 +32,19 @@ addEventListener("DOMContentLoaded", () => {
                 <p class="descripcion-proyecto--descripcion">Cliente: ${informacion[proyecto.id].cliente}</p>
                 <p class="descripcion-proyecto--descripcion">${informacion[proyecto.id].descripcion} </p>
                 <p class="descripcion-proyecto--descripcion">Tecnologías usadas: ${informacion[proyecto.id].tecnologiasUsadas}</p>
-                <div class="descripcion-proyecto--contenido--enlaces">
-                <a href="${informacion[proyecto.id].enlaceGit}" target="_blank" class="boton">Código</a>
-                <a href="${informacion[proyecto.id].enlace}" target="_blank" class="boton">Producto Final</a>
-                </div>
-                
             `
+            const contenedorEnlaces = document.createElement('div')
+            contenedorEnlaces.classList.add('descripcion-proyecto--contenido--enlaces')
+            let htmlEnlaces = ``
+            if (informacion[proyecto.id].enlaceGit) {
+                htmlEnlaces += `<a href="${informacion[proyecto.id].enlaceGit}" target="_blank" class="boton">Código</a>\n`
+            }
+            if (informacion[proyecto.id].enlace) {
+                htmlEnlaces += `<a href="${informacion[proyecto.id].enlace}" target="_blank" class="boton">Producto Final</a>\n`
+            }
+            contenedorEnlaces.innerHTML = htmlEnlaces
+            descripcionProyecto.appendChild(contenedorEnlaces)
+
             ventana.classList.toggle("mostrar")
         })
     }
