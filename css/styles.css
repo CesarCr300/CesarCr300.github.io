@@ -1,6 +1,7 @@
 :root {
   --color-text: #18191f;
   --color-black-default: #0b0d17;
+  --color-violet-light: #F1E4FF;
 }
 
 * {
@@ -74,7 +75,7 @@ h1 {
 .main-section-abilities {
   min-height: 650px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, min-max(350px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1em;
 }
 
@@ -88,6 +89,74 @@ h1 {
 .main-section-abilities > .left > .content {
   width: 60%;
   margin: 0 auto;
+}
+
+.main-section-abilities > .right {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  padding: 56px; /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+  border: solid 1px var(--color-violet-light);
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+}
+
+.second-circle {
+  position: absolute;
+  width: 235px;
+  height: 235px;
+  padding: 56px;
+  background-color: var(--color-violet-light);
+  border-radius: 50%;
+}
+
+.third-circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  padding: 56px;
+  background-color:white;
+  border-radius: 50%;
+}
+
+.main-section-abilities > .right img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  z-index: 10;
+}
+
+.deg45 {
+  transform: rotate(45deg) translate(175px) rotate(-45deg);
+}
+.deg90 {
+  transform: rotate(90deg) translate(175px) rotate(-90deg);
+}
+.deg135 {
+  transform: rotate(135deg) translate(175px) rotate(-135deg);
+}
+.deg225 {
+  transform: rotate(225deg) translate(175px) rotate(-225deg);
+}
+.deg270 {
+  transform: rotate(270deg) translate(175px) rotate(-270deg);
+}
+.deg315 {
+  transform: rotate(315deg) translate(175px) rotate(-315deg);
+}
+
+.little-deg270 {
+  transform: rotate(270deg) translate(60px) rotate(-270deg);
+}
+.little-deg135 {
+  transform: rotate(135deg) translate(60px) rotate(-135deg);
+}
+.little-deg45{
+  transform: rotate(45deg) translate(60px) rotate(-45deg);
 }
 
 .main-section-projects {
@@ -164,7 +233,7 @@ h1 {
   }
   .main-section-abilities {
   }
-  .footer>.center{
+  .footer > .center {
     display: flex;
     align-items: center;
   }
