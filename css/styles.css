@@ -1,7 +1,8 @@
 :root {
   --color-text: #18191f;
   --color-black-default: #0b0d17;
-  --color-violet-light: #F1E4FF;
+  --color-violet-light: #f1e4ff;
+  --color-violet-normal: #8c30f5;
 }
 
 * {
@@ -14,15 +15,20 @@ body {
   position: relative;
 }
 
-#navbar ul{
+ul {
   list-style: none;
   height: auto;
 }
 
-#navbar>ul>li {
+#navbar > ul > li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#navbar > ul > li > a {
+  color: var(--color-text, black);
+  text-decoration: none;
 }
 
 #main-header {
@@ -70,7 +76,7 @@ body {
 }
 
 h1 {
-  font-size: 4.3em;
+  font-size: 4.3rem;
   margin-bottom: 0.1em;
 }
 
@@ -94,11 +100,11 @@ h1 {
   margin: 0 auto;
 }
 
-.main-section-abilities>.circles{
+.main-section-abilities > .circles {
   /* margin: auto 0; */
 }
 
-.main-section-abilities>.right {
+.main-section-abilities > .right {
   position: relative;
   width: 350px;
   height: 350px;
@@ -121,7 +127,7 @@ h1 {
   width: 120px;
   height: 120px;
   padding: 56px;
-  background-color:white;
+  background-color: white;
   border-radius: 50%;
 }
 
@@ -161,7 +167,7 @@ h1 {
 .little-deg135 {
   transform: rotate(135deg) translate(60px) rotate(-135deg);
 }
-.little-deg45{
+.little-deg45 {
   transform: rotate(45deg) translate(60px) rotate(-45deg);
 }
 
@@ -197,6 +203,16 @@ h1 {
   margin-bottom: 0;
 }
 
+.project > ul {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--color-violet-normal, violet);
+}
+
+.project > ul > li {
+  margin-right: 2em;
+}
+
 .project > * {
   margin: 1em;
 }
@@ -207,6 +223,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "empty centered right";
+  padding-top: 3em;
   background-color: var(--color-black-default);
   color: white;
   justify-items: center;
@@ -225,17 +242,31 @@ h1 {
 
 @media (max-width: 500px) {
   body {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
-  /* #main-header{
-    font-size: 0.9em;
-  } */
+  h1 {
+    font-size: 2.5rem;
+  }
+  #beggining > .content {
+    margin-left: 1em;
+  }
+  #beggining > .content h2 {
+    font-size: 0.9rem;
+  }
+  #abilities {
+    margin-bottom: 21em;
+  }
   .main-section-projects > .content {
     width: 100%;
   }
   .section-beggining > .content {
     width: 100%;
     font-size: 0.65em;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   .footer > .center {
     display: flex;
