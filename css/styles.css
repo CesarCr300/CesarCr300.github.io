@@ -14,8 +14,15 @@ body {
   position: relative;
 }
 
-ul {
+#navbar ul{
   list-style: none;
+  height: auto;
+}
+
+#navbar>ul>li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-header {
@@ -32,7 +39,8 @@ ul {
 #navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  height: 100%;
+  max-width: 100%;
 }
 
 #navbar > .navbar-side {
@@ -75,15 +83,10 @@ h1 {
 .main-section-abilities {
   min-height: 650px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1em;
-}
-
-.main-section-abilities > .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
   align-items: center;
+  gap: 1em;
 }
 
 .main-section-abilities > .left > .content {
@@ -91,14 +94,17 @@ h1 {
   margin: 0 auto;
 }
 
-.main-section-abilities > .right {
+.main-section-abilities>.circles{
+  /* margin: auto 0; */
+}
+
+.main-section-abilities>.right {
   position: relative;
   width: 350px;
   height: 350px;
   padding: 56px; /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
   border: solid 1px var(--color-violet-light);
   border-radius: 50%;
-  margin: 1.75em auto 0;
 }
 
 .second-circle {
@@ -175,7 +181,7 @@ h1 {
   /* margin: 0 8em 4em 8em; */
   width: 70%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-template-rows: 1fr 1fr;
   gap: 2em;
 }
@@ -189,9 +195,6 @@ h1 {
   color: var(--text-color, black);
   border-radius: 0.5em;
   margin-bottom: 0;
-}
-.project > .content {
-  /* display: flex; */
 }
 
 .project > * {
@@ -224,14 +227,15 @@ h1 {
   body {
     font-size: 0.9em;
   }
+  /* #main-header{
+    font-size: 0.9em;
+  } */
   .main-section-projects > .content {
-    width: 90%;
+    width: 100%;
   }
   .section-beggining > .content {
     width: 100%;
     font-size: 0.65em;
-  }
-  .main-section-abilities {
   }
   .footer > .center {
     display: flex;
