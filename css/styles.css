@@ -89,7 +89,7 @@ h1 {
 .main-section-abilities {
   min-height: 650px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   justify-items: center;
   align-items: center;
   gap: 1em;
@@ -100,32 +100,29 @@ h1 {
   margin: 0 auto;
 }
 
-.main-section-abilities > .circles {
-  /* margin: auto 0; */
-}
-
 .main-section-abilities > .right {
   position: relative;
-  width: 350px;
-  height: 350px;
-  padding: 56px; /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+  width: 486px;
+  height: 486px;
+  padding: 70px; /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
   border: solid 1px var(--color-violet-light);
   border-radius: 50%;
+  margin-bottom: 2em;
 }
 
 .second-circle {
   position: absolute;
-  width: 235px;
-  height: 235px;
-  padding: 56px;
+  width: 340px;
+  height: 340px;
+  padding: 70px;
   background-color: var(--color-violet-light);
   border-radius: 50%;
 }
 
 .third-circle {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   padding: 56px;
   background-color: white;
   border-radius: 50%;
@@ -143,32 +140,32 @@ h1 {
 }
 
 .deg45 {
-  transform: rotate(45deg) translate(175px) rotate(-45deg);
+  transform: rotate(45deg) translate(243px) rotate(-45deg);
 }
 .deg90 {
-  transform: rotate(90deg) translate(175px) rotate(-90deg);
+  transform: rotate(90deg) translate(243px) rotate(-90deg);
 }
 .deg135 {
-  transform: rotate(135deg) translate(175px) rotate(-135deg);
+  transform: rotate(135deg) translate(243px) rotate(-135deg);
 }
 .deg225 {
-  transform: rotate(225deg) translate(175px) rotate(-225deg);
+  transform: rotate(225deg) translate(243px) rotate(-225deg);
 }
 .deg270 {
-  transform: rotate(270deg) translate(175px) rotate(-270deg);
+  transform: rotate(270deg) translate(243px) rotate(-270deg);
 }
 .deg315 {
-  transform: rotate(315deg) translate(175px) rotate(-315deg);
+  transform: rotate(315deg) translate(243px) rotate(-315deg);
 }
 
 .little-deg270 {
-  transform: rotate(270deg) translate(60px) rotate(-270deg);
+  transform: rotate(270deg) translate(100px) rotate(-270deg);
 }
 .little-deg135 {
-  transform: rotate(135deg) translate(60px) rotate(-135deg);
+  transform: rotate(135deg) translate(100px) rotate(-135deg);
 }
 .little-deg45 {
-  transform: rotate(45deg) translate(60px) rotate(-45deg);
+  transform: rotate(45deg) translate(100px) rotate(-45deg);
 }
 
 .main-section-projects {
@@ -254,10 +251,71 @@ h1 {
     font-size: 0.9rem;
   }
   #abilities {
-    margin-bottom: 21em;
+    margin-bottom: 20px;
   }
   .main-section-projects > .content {
     width: 100%;
+  }
+  .main-section-abilities {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .main-section-abilities > .left >.content {
+    margin: 0 0.5em;
+    width: 100%;
+  }
+  .main-section-abilities > .right {
+    width: 350px;
+    height: 350px;
+    padding: 56px; /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+  }
+
+  .second-circle {
+    width: 235px;
+    height: 235px;
+    padding: 56px;
+  }
+
+  .third-circle {
+    width: 120px;
+    height: 120px;
+    padding: 56px;
+  }
+
+  .main-section-abilities > .right img {
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px;
+  }
+
+  .deg45 {
+    transform: rotate(45deg) translate(175px) rotate(-45deg);
+  }
+  .deg90 {
+    transform: rotate(90deg) translate(175px) rotate(-90deg);
+  }
+  .deg135 {
+    transform: rotate(135deg) translate(175px) rotate(-135deg);
+  }
+  .deg225 {
+    transform: rotate(225deg) translate(175px) rotate(-225deg);
+  }
+  .deg270 {
+    transform: rotate(270deg) translate(175px) rotate(-270deg);
+  }
+  .deg315 {
+    transform: rotate(315deg) translate(175px) rotate(-315deg);
+  }
+
+  .little-deg270 {
+    transform: rotate(270deg) translate(60px) rotate(-270deg);
+  }
+  .little-deg135 {
+    transform: rotate(135deg) translate(60px) rotate(-135deg);
+  }
+  .little-deg45 {
+    transform: rotate(45deg) translate(60px) rotate(-45deg);
   }
   .section-beggining > .content {
     width: 100%;
