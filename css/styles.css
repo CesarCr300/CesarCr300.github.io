@@ -304,6 +304,10 @@ p {
 .project>* {
   margin: 1em;
 }
+
+.project a{
+  text-decoration: none;
+}
 #footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
