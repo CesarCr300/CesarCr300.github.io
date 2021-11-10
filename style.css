@@ -32,12 +32,11 @@ body {
     height: 100vh;
 }
 
-
 /*navbar*/
 
 .header {
     margin: 0 0 0 0;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -147,7 +146,7 @@ body {
 .habilidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 60%;
     height: 80%;
     flex-wrap: wrap;
