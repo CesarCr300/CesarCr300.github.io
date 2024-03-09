@@ -221,14 +221,15 @@
   "references": [],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "NestJS template",
       "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
+      "description": "NestJS template with the most common configurations following the NestJS documentation",
       "highlights": [
-        "Choose your own adventure",
-        "In progress"
+        "",
+        ""
       ],
-      "url": "https://mars.codes"
+      "url": "",
+      "github": "https://github.com/CesarCr300/NestJsTemplate"
     }
   ]
 }
