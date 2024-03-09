@@ -1,0 +1,235 @@
+{
+  "basics": {
+    "name": "César Jesús Contreras Romero",
+    "label": "Full-Stack developer with 2 years of experience",
+    "image": "/me.webp",
+    "email": "cesarjcontreras30@gmail.com",
+    "phone": "+51 918521619",
+    "url": "https://midu.dev",
+    "summary": "2 years of experience a Web Developer. I'm a proactive person, I like to learn new things and I'm always looking for new challenges. I have experience in the development of web applications, RESTful APIs, and the implementation of sockets in the backend.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "ICA",
+      "countryCode": "PE",
+      "region": "Peru"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cesar jesus contreras romero",
+        "url": "https://linkedin.com/in/césar-jesús-contreras-romero-3900b1200"
+      },
+      {
+        "network": "GitHub",
+        "username": "CesarCr300",
+        "url": "https://github.com/CesarCr300"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Lilab",
+      "position": "Full Stack Developer",
+      "url": "https://www.lilab.io/",
+      "startDate": "2022-04-01",
+      "endDate": "2024-01-07",
+      "summary": "I worked with technologies as .NET Core, NodeJS, React, Sockets, background task managers, CI/CD, and more. I was in charge of the backend development of multiple and the maintenance of differents applications.",
+      "highlights": [
+        "Implemented sockets in the backend",
+        "Reduced a client's service costs by 90%",
+        "Reduced the response time of an API by 80%"
+      ]
+    },
+    {
+      "name": "ElSpot.pe",
+      "position": "Web Developer",
+      "url": "https://www.instagram.com/elspot.pe/",
+      "startDate": "2022-01-01",
+      "endDate": "2022-04-01",
+      "summary": "I worked there with technologies as NodeJS, React, MySQL, Wordpress and PHP. I was in charge of the development of a reutilizable E-commercer.",
+      "highlights": [
+        "Optimized the ladding page of the website",
+        "Implemented a payment gateway"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica del Peru",
+      "url": "https://www.utp.edu.pe/web/",
+      "area": "System Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2020-03-15",
+      "endDate": null,
+      "score": null,
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "EFSET English Certificate C1 Advanced",
+      "date": "2022-06",
+      "issuer": "EF Standard English Test (EF SET)",
+      "url": "https://cert.efset.org/i8c16C"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "NestJS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "Node",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": ".NET Core",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "C#"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Intermediate"
+    },
+    {
+      "name": "GitHub Actions",
+      "level": "Beginner"
+    },
+    {
+      "name": "Apache Kafka",
+      "level": "Beginner",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "C#"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": [
+        "Database",
+        "SQL",
+        "Database",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code",
+        "Git"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Responsive design"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Videogames",
+      "keywords": []
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "NestJS template",
+      "isActive": true,
+      "description": "NestJS template with the most common configurations following the NestJS documentation",
+      "highlights": [
+        "",
+        ""
+      ],
+      "url": "",
+      "github": "https://github.com/CesarCr300/NestJsTemplate"
+    }
+  ]
+}
